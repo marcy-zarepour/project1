@@ -20,7 +20,7 @@
            <li class="nav-item active">
              <a class="nav-link" href="#"><%= link_to 'Home', root_path %> <span class="sr-only">(current)</span></a>
            </li>
-
+           <% if @current_user.present? %>
            <li class="nav-item active">
            <a class="nav-link" href="#"><%= link_to 'All Category', categories_path %><span class="sr-only">(current)</span></a>
          </li>
@@ -30,7 +30,7 @@
        </li>
        </ul>
       <ul class="navbar-nav ml-auto">
-           <% if @current_user.present? %>
+           
 
            <li class="nav-item active" >
            <a class="nav-link" href="#">  <%= link_to "Logout #{ @current_user.email }", login_path, :method => 'delete' %> <span class="sr-only">(current)</span></a>
@@ -49,8 +49,10 @@
        </div>
        <% end %>
      </nav>
-     <%= yield %>
+     
     </div>
+    
+     <%= yield %>
   </body>
 </html>
 

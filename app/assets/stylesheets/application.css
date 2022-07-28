@@ -18,16 +18,30 @@
  body {
     background-color: #e6f9ff
  }
+
+ .homebanner {
+    margin: 0 auto;
+    max-width: 960px;
+ }
  .headinghome{
+    text-align: center;
     padding-top:60px;
     padding-bottom:10px;
  }
-
+.btns {
+    max-width: 960px;
+    margin: 0 auto;
+}
  .navbar-nav > li{
     padding-left:30px;
     padding-right:30px;
   }
- 
+  .containerform{
+    max-width: 250px;
+    text-align: center;
+    padding-top: 2em;
+    margin: 0 auto;
+  }
  
  .animated {
     opacity: 0.5;

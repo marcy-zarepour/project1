@@ -27,7 +27,7 @@ r14 = Recipe.create :name => 'Beef and beer slow-cooked pies', :serving => '2', 
 r15 = Recipe.create :name => 'Apricot and oat muesli slice', :serving => '4', :time => '60 Min', :description => 'Combine the oats, apricot, sultanas, coconut, flour and sunflower seeds in a large bowl. Make a well in the centre.' , :image=> 'https://img.taste.com.au/FSV1CwVI/w720-h480-cfill-q80/taste/2017/12/apricot-oat-muesli-slice-taste_1980x1320-133824-1.jpg'
 r16 = Recipe.create :name => 'Alfajores', :serving => '2', :time => '60 Min', :description => 'Combine fig, date, tea bags, boiling water and bicarbonate of soda in a large heatproof bowl. Set aside for 10 mins to soak. Discard the tea bags.' , :image=> 'https://img.taste.com.au/uPjXfgFc/w720-h480-cfill-q80/taste/2022/02/alfajores-176746-1.png'
 r17 = Recipe.create :name => 'Apple tart', :serving => '4', :time => '45 Min', :description => '' , :image=> 'https://img.taste.com.au/HLVMtR0l/w720-h480-cfill-q80/taste/2018/03/apr-18_slice-stack-apple-tart-3000x2000-136337-1.jpg'
-r18 = Recipe.create :name => 'Fairy bread croissant custard slice', :serving => '2', :time => '60 Min', :description => 'Use a balloon whisk to whisk the custard powder (70g (1/2 cup) custard powder), caster sugar (70g (1/3 cup) caster sugar) and 60ml (1/4 cup) of the milk (375ml (1 1/2 cups) milk) in a medium saucepan until smooth. Whisk in the cream (300ml thickened cream) and remaining milk. Place over medium- low heat and cook, whisking gently, until the mixture starts to thicken, then whisk vigorously, so as not to create lumps until the mixture is thick. Whisk in the butter (40g butter, chopped) until melted and combined.' , :image=> 'https://therecipesmom.com/wp-content/uploads/2021/12/fairy-bread-croissant-custard-slice-165937-2.jpg'
+
 puts "#{Recipe.count} recipes created"
 
 Category.destroy_all
@@ -40,4 +40,4 @@ puts "#{Category.count} categories created"
 
 c1.recipes << r7 << r8 << r9 << r10 << r11 
 c2.recipes << r1 << r2 << r3 << r4 << r5 << r6
-c3.recipes << r12 << r13 << r14 << r15 << r16 << r17 << r18 
+c3.recipes << r12 << r13 << r14 << r15 << r16 << r17 
