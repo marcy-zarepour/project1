@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Original Project Idea
+This project is to create web application which the user could use as a guide to cook. The goal is to simplify the meal choice by using only the ingredients found at home.<br />
 
-* Ruby version
+### Project Description: 
+HAPPY COOKING is a food application that serves as a quick and convenient collection of recipes in your pocket.there are 3 category starter/main and desserts. The user is able to register in the application so that data such as their favorite recipes can be liked also recipes are order by likes more likes comes first.users can create her/his recipes and able to edit and delete own recipes.<br />
 
-* System dependencies
+## Demo
 
-* Configuration
+Here are how this app looks :
+Click `get started` : <br><br>
+![home page](https://res.cloudinary.com/marcy/image/upload/v1659050194/Screen_Shot_2022-07-28_at_9.54.29_pm_rx0u7x.png) <br><br>
 
-* Database creation
+![category page](https://res.cloudinary.com/marcy/image/upload/v1659050194/Screen_Shot_2022-07-28_at_9.54.39_pm_egz3ij.png) <br><br>
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Built with:
+1.Ruby 
+2.css
+3.bootstrap
+<br />
