@@ -1,0 +1,8 @@
+<h1>All Recipes</h1>
+<% @categories.each do |category| %>
+    <ul>
+        <ol><%= category.type %></ol>
+       <ol> <%= link_to image_tag(category.image), category %></ol> 
+    </ul>
+<% end %>
+

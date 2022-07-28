@@ -12,4 +12,77 @@
  *
  *= require_tree .
  *= require_self
+ *= @import "font-awesome";
  */
+
+ body {
+    background-color: #e6f9ff
+ }
+ .headinghome{
+    padding-top:60px;
+    padding-bottom:10px;
+ }
+
+ .navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+ 
+ 
+ .animated {
+    opacity: 0.5;
+    width: 500px;
+    transition: 2s;
+ }
+
+ .animated:hover {
+    width: 1000px;
+    opacity: 1;
+ }
+/* Recipe - Heading w picture */
+
+.headingwithpicture {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.recipe-image{
+    border-radius: 50px;
+}
+
+/* row */
+.meals {
+    margin-top: 17%;
+}
+
+.meals img {
+    box-shadow: 5px 10px 15px 5px #bfbfbf;
+}
+
+ /* LIKES */
+
+ .likes {
+    padding: 1em;
+    margin-left: -33.5em;
+ }
+
+ .like_group {
+  display: inline-block;
+ }
+
+
+.like_button {
+    background-color: grey;
+    border: none;
+    width: 60px;
+    transition: 0.5s;
+ }
+
+ .like_button:hover {
+    background-color: #ffb3b3;
+    width: 120px;
+}
+.category-item{
+color:green;
+}
+

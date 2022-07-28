@@ -1,0 +1,57 @@
+<div class="headingwithpicture">
+    <h1> <%= @recipe.name %> </h1>
+    <%= image_tag @recipe.image,:class=>'recipe-image' if @recipe.image.present? %>
+
+    <div class="likes">
+        <div class="like_group">
+            <% if @like.nil? %>
+            <%= button_to'Like',like_index_path,params:{ like: {recipe_id: @recipe.id}}, method: :post, :class => 'like_button'%>
+            <% end %>
+        </div>
+        <div class="like_group">
+            <%= @recipe.likes.count %> like 
+        </div>
+    </div>
+</div>
+
+
+
+<ul>
+    <li>Recipe: <%= @recipe.name %></li>
+    <li>Time: <%= @recipe.time %></li>
+    <li>Serving: <%= @recipe.serving %></li>
+</ul>
+<br>
+
+<div>Direction: <%= @recipe.description %></div>
+
+<% if @recipe.user == @current_user %>   
+<div>
+    <%= link_to 'Edit Recipe', edit_recipe_path(@recipe) %>
+    <%= link_to 'Delete Recipe', @recipe, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+    
+</div>
+
+<% end%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

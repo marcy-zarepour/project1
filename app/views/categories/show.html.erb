@@ -1,0 +1,11 @@
+
+<div class='headingwithpicture'>
+    <% @category.recipes.left_joins(:likes).group(:id).order(Arel.sql 'count(likes.id) desc').each  do |recipe| %>
+        <h2> <%= recipe.name  %> </h2>
+        <%= link_to image_tag(recipe.image, :class=>'animated'), recipe %>
+    <% end %>
+</div>
+
+
+
+

@@ -1,0 +1,2 @@
+module CreateCategoryRecipeHelper
+end
