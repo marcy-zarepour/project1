@@ -9,8 +9,6 @@ class CategoriesController < ApplicationController
     #@recipes = recipe.order('likes_count')
   
   end
-
-  
   private
   def category_params
     params.require(:category).permit(:name,:image,:category_id)

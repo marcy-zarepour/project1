@@ -13,9 +13,6 @@ class LikeController < ApplicationController
     @like.destroy
     redirect_to recipe
   end
-
-
-  
   private
   def like_params
     params.require(:like).permit(:recipe_id)
